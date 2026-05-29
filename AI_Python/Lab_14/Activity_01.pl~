@@ -1,0 +1,3 @@
+woman(mia).
+woman(jody).
+

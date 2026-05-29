@@ -1,0 +1,25 @@
+male(ahmed).
+male(ali).
+male(usman).
+male(hamza).
+male(bilal).
+
+female(fatima).
+female(aisha).
+female(sara).
+female(amna).
+
+parent(ahmed, ali).
+parent(fatima, ali).
+
+parent(ahmed, sara).
+parent(fatima, sara).
+
+parent(ali, hamza).
+parent(aisha, hamza).
+
+parent(ali, amna).
+parent(aisha, amna).
+
+parent(sara, bilal).
+parent(usman, bilal).
