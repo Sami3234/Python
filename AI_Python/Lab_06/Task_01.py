@@ -1,3 +1,7 @@
+# Lab 06 Task: 2D sorted matrix mein binary search karta hai.
+# Matrix ko virtual 1D array ki tarah treat kiya gaya hai.
+# Target value ki row/column position return hoti hai.
+
 def binarySearch2D(matrix, target):
     if not matrix or not matrix[0]:
         return -1, -1

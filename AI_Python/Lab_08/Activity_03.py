@@ -1,3 +1,7 @@
+# Lab 08 Activity: A* search algorithm implement karta hai.
+# Open/closed sets aur heuristic values path selection guide karte hain.
+# Start se goal tak shortest estimated path print hoti hai.
+
 def aStarAlgo(start_node, stop_node):
     open_set = set([start_node])
     closed_set = set()

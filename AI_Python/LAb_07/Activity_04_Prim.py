@@ -1,3 +1,7 @@
+# Lab 07 Activity: Prim algorithm se Minimum Spanning Tree banata hai.
+# Minimum edge choose karke MST ko step by step grow karta hai.
+# Parent array final MST edges ko represent karta hai.
+
 import sys
 
 class Graph:

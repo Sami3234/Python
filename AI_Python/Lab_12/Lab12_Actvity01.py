@@ -1,3 +1,7 @@
+# Lab 12 Activity: Simple Linear Regression salary prediction karta hai.
+# Salary_Data dataset train/test split hota hai aur model fit hota hai.
+# Plots predictions show karte hain aur manual/auto predictions compare hoti hain.
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

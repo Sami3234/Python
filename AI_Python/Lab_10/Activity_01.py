@@ -1,3 +1,7 @@
+# Lab 10 Activity: Genetic algorithm ke random population steps dikhata hai.
+# randint values chromosome/population generation mein use hoti hain.
+# Fitness based selection se solution improve karne ki koshish hoti hai.
+
 from numpy.random import randint
 from numpy.random import rand
 

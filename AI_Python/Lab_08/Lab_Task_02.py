@@ -1,3 +1,7 @@
+# Lab 08 Task: Best-first/A* style priority queue search hai.
+# heapq lowest priority node ko pehle process karta hai.
+# Graph path finding ke liye cost/heuristic values use hoti hain.
+
 import heapq
 
 graph = {

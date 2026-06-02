@@ -1,3 +1,7 @@
+# Lab 06 Activity: Jump Search algorithm implement karta hai.
+# Sorted array ko fixed jumps mein scan karke phir linear search karta hai.
+# Target element ka index print karta hai.
+
 import math
 
 def getEgyptianFraction(numerator, denominator):

@@ -1,3 +1,7 @@
+# Lab 08 Task: A* algorithm ka task version hai.
+# g-score actual cost aur heuristic estimated cost combine hoti hai.
+# Goal milne par reconstructed path display hota hai.
+
 def aStarAlgo(start_node, stop_node):
     open_set = set([start_node])
     closed_set = set()

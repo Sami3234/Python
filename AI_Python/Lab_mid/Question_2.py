@@ -1,3 +1,7 @@
+# Mid Lab Question: Sorted 2D matrix mein binary search karta hai.
+# Matrix ko virtual 1D list ki tarah index kiya jata hai.
+# Target milay to row/column print, warna not found message.
+
 matrix = [
     [1, 3, 5],
     [7, 9, 11],

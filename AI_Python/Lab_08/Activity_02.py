@@ -1,3 +1,7 @@
+# Lab 08 Activity: Graph representation aur traversal/helper logic use karta hai.
+# defaultdict adjacency list ko easy banata hai.
+# Code graph ke nodes/edges ko process karke result print karta hai.
+
 from collections import defaultdict
 
 def findManhattanEuclidPair(arr, n):

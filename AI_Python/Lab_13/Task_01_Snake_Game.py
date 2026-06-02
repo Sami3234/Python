@@ -1,3 +1,7 @@
+# Lab 13 Task: Basic Snake Game Pygame mein implement hai.
+# Snake movement, food collision, score aur self/wall collision handle hoti hai.
+# C se restart aur Q se quit ka game-over flow hai.
+
 import pygame
 import random
 

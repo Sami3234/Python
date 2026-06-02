@@ -1,3 +1,7 @@
+# Lab 11 Task: Tic-Tac-Toe playable/AI logic ka task solution hai.
+# Board print, move validation aur winner checking functions use hote hain.
+# Game loop turns handle karke final result show karta hai.
+
 def print_board(board):
     for row in board:
         print(" ".join(row))

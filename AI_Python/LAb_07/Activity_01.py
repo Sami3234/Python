@@ -1,3 +1,7 @@
+# Lab 07 Activity: Graph coloring/backtracking ka basic example hai.
+# Adjacent vertices ko same color dene se bachaya jata hai.
+# Available colors se valid assignment find/print hoti hai.
+
 from collections import defaultdict
 
 class Graph:

@@ -1,3 +1,7 @@
+# Lab 09 Task: Heuristic/priority based search ka task solution hai.
+# heapq se best candidate node pehle expand hota hai.
+# Path finding ya optimization result print hota hai.
+
 import heapq
 
 graph = {

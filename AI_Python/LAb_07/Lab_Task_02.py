@@ -1,3 +1,7 @@
+# Lab 07 Task: Hamiltonian cycle/path style backtracking problem solve karta hai.
+# Graph class path validity check karti hai.
+# Recursive utility function complete valid route find karta hai.
+
 class Graph:
     def __init__(self, vertices):
         self.V = vertices

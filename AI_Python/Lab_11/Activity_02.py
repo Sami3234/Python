@@ -1,3 +1,7 @@
+# Lab 11 Activity: Tic-Tac-Toe game logic implement karta hai.
+# player turns, board state aur win/draw checks manage hote hain.
+# Console par game state/results print hote hain.
+
 player = "x"
 opponent = "o"
 

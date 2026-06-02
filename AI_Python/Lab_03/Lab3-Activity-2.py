@@ -1,3 +1,7 @@
+# Lab 03 Activity: Tree ke parents, children, leaf nodes aur degree print karta hai.
+# Adjacency list se tree structure represent hota hai.
+# Different helper functions tree ki properties calculate karti hain.
+
 def printParents(node, adj, parent): 
     if (parent == 0): 
         print(node, "->Root") 

@@ -1,3 +1,7 @@
+# Lab 10 Task: Randomized genetic algorithm task implementation hai.
+# Candidate solutions generate, evaluate aur mutate/crossover hoti hain.
+# End par best found solution/result display hota hai.
+
 import random
 import heapq
 

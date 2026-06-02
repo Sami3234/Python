@@ -1,3 +1,7 @@
+# Lab 04 Activity: Directed graph par DFS traversal chalata hai.
+# dfs() function current node print karta hai phir unvisited neighbors visit karta hai.
+# Traversal vertex 2 se start hoti hai.
+
 
 graph = {
     0: [1, 2],

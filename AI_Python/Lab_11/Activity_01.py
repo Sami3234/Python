@@ -1,3 +1,7 @@
+# Lab 11 Activity: Tic-Tac-Toe board evaluate karta hai.
+# evaluate() function winning rows/columns/diagonals check karta hai.
+# Minimax style game AI ke liye score return hota hai.
+
 def evaluate(b):
     for row in range(3):
         if b[row][0] == b[row][1] and b[row][1] == b[row][2]:

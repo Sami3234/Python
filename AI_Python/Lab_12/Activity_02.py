@@ -1,3 +1,7 @@
+# Lab 12 Activity: Multiple Linear Regression example hai.
+# 50_Startups dataset se categorical State column one-hot encode hota hai.
+# Model train karke predicted vs actual profit values print karta hai.
+
 import numpy as np
 import pandas as pd
 from sklearn.compose import ColumnTransformer

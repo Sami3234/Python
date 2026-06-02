@@ -1,3 +1,7 @@
+# Lab 13 Activity: Pygame window mein image display karta hai.
+# image.jpg load karke 400x400 size par scale hoti hai.
+# Window close event par pygame quit hota hai.
+
 import pygame
 
 pygame.init()

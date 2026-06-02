@@ -1,3 +1,7 @@
+# Lab 05 Task: Romania graph par Uniform Cost Search use hoti hai.
+# heapq priority queue shortest cumulative cost ko pehle process karti hai.
+# Arad se Bucharest tak shortest path aur total cost print hoti hai.
+
 import heapq
 
 graph = {

@@ -1,3 +1,7 @@
+# Lab 03 Activity: Graph par BFS traversal A node se start hoti hai.
+# visited list duplicate visits rokne ke liye use hoti hai.
+# Queue neighbors ko level-wise process karti hai.
+
 
 graph = {
     'A': ['B', 'C', 'E'],

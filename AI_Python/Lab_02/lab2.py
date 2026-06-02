@@ -1,3 +1,7 @@
+# Lab 02: Do lists banata hai user input se.
+# Har list mein 5 integer values add hoti hain.
+# End par dono lists ko combine karke print karta hai.
+
 mylist1=[]
 print("Enter objects of first list.")
 for i in range(5):

@@ -1,3 +1,7 @@
+# Lab 07 Activity: Graph coloring problem class-based style mein hai.
+# isSafe check karta hai ke selected color adjacent nodes se clash na kare.
+# graphColoring recursive backtracking se solution dhoondta hai.
+
 class Graph:
     def __init__(self, vertices):
         self.V = vertices

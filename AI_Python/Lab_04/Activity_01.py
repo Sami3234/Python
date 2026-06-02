@@ -1,3 +1,7 @@
+# Lab 04 Activity: Recursive Depth First Search example hai.
+# Graph dictionary se represent hota hai aur visited set repeat visits rokta hai.
+# Start node 5 se DFS traversal print hoti hai.
+
 graph = {
     '5': ['3', '7'],
     '3': ['2', '4'],

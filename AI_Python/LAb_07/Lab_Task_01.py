@@ -1,3 +1,7 @@
+# Lab 07 Task: Weighted graph par Prim MST implementation hai.
+# minKey smallest unvisited edge weight choose karta hai.
+# Output MST edges aur weights show karta hai.
+
 import sys
 
 class Graph:

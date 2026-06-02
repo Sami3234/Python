@@ -1,3 +1,7 @@
+# Lab 08 Activity: Heuristic distance calculation ka example hai.
+# math functions se nodes ke beech estimated distance nikalti hai.
+# Search algorithms mein heuristic guide ke liye use ho sakti hai.
+
 import math
 import pandas as pd
 import numpy as np

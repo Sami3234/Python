@@ -1,3 +1,7 @@
+# Lab 03 Task: Node class ke sath BFS path search karta hai.
+# Graph weighted hai, lekin BFS traversal order ke mutabiq path dhoondta hai.
+# End par A se G tak path aur accumulated cost print hoti hai.
+
 from collections import deque
 
 class Node:

@@ -1,3 +1,7 @@
+# Lab 04 Task: Romania map par DFS se Arad to Bucharest route search karta hai.
+# Recursive DFS path list aur distance ko update karta rehta hai.
+# Goal milne par path aur total distance print hoti hai.
+
 
 graph = {
     "Arad": [("Zerind", 75), ("Sibiu", 140), ("Timisoara", 118)],

@@ -1,3 +1,7 @@
+# Lab 03 Task: Romania map par BFS se route dhoondta hai.
+# Queue mein current city, path aur distance store hota hai.
+# Arad se Bucharest tak found path aur total distance print karta hai.
+
 from collections import deque
 
 graph = {

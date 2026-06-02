@@ -1,3 +1,7 @@
+# Lab 11 Activity: Minimax algorithm ka basic example hai.
+# MAX/MIN values player choices ko evaluate karne ke liye use hote hain.
+# Best move/score recursive search se calculate hota hai.
+
 MAX = 1000
 MIN = -1000
 

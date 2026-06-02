@@ -1,3 +1,7 @@
+# Mid Lab Question: Romania graph par DFS aur UCS compare karta hai.
+# DFS normal stack traversal karta hai, UCS lowest-cost path choose karta hai.
+# Path, total cost aur expanded nodes print hote hain.
+
 from heapq import heappush, heappop
 
 graph = {

@@ -1,3 +1,7 @@
+# Lab 05 Activity: Two-end linear search karta hai.
+# Array ke left aur right dono sides se target check hota hai.
+# Found position aur attempt count print karta hai.
+
 def search(arr, search_element):
     left = 0
     right = len(arr) - 1

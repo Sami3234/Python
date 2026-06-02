@@ -1,3 +1,7 @@
+# Lab 10 Activity: Genetic algorithm ka extended example hai.
+# Population, crossover/mutation aur fitness calculation ka flow follow hota hai.
+# Best solution iterations ke baad print/show hota hai.
+
 from numpy.random import randint
 from numpy.random import rand
 

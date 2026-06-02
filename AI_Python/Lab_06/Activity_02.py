@@ -1,3 +1,7 @@
+# Lab 06 Activity: Police and thief greedy matching problem solve karta hai.
+# Har police nearest available thief ko range k ke andar catch kar sakta hai.
+# Function total caught thieves return karta hai.
+
 def policeThief(arr, n, k):
     thi = []
     pol = []

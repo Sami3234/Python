@@ -1,3 +1,7 @@
+# Lab 09 Activity: Tree/graph Node structure se search logic demonstrate karta hai.
+# Node objects state, parent ya cost information hold karte hain.
+# Code path/solution find karke output display karta hai.
+
 class Node:
     def __init__(self, position, parent):
         self.position = position

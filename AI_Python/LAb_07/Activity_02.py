@@ -1,3 +1,7 @@
+# Lab 07 Activity: Graph coloring ko thora expanded form mein solve karta hai.
+# Backtracking invalid colors reject karke next vertex par move karta hai.
+# Final coloring possible ho to vertices ke colors print hote hain.
+
 from collections import defaultdict
 
 class Graph:

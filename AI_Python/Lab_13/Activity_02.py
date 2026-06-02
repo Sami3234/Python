@@ -1,3 +1,7 @@
+# Lab 13 Activity: Pygame scrolling text animation hai.
+# COMSATS letters different directions se move karte hain.
+# Loop event handling aur timed screen updates manage karta hai.
+
 import pygame
 
 pygame.init()

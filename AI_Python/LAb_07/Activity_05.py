@@ -1,3 +1,7 @@
+# Lab 07 Activity: Hamiltonian path check karta hai.
+# Backtracking se aisa path dhoondta hai jo har vertex ko once visit kare.
+# Possible path milay to True/solution style result milta hai.
+
 def Hamiltonian_path(adj, N):
     dp = [[False for i in range(1 << N)] for j in range(N)]
 

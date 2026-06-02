@@ -1,3 +1,7 @@
+# Lab 11 Task: N-Queen backtracking aur alpha-beta style pruning compare karta hai.
+# normal_nodes aur pruned_nodes search effort count karte hain.
+# Output solutions aur checked nodes ka comparison print karta hai.
+
 normal_nodes = 0
 pruned_nodes = 0
 

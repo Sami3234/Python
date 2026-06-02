@@ -47,7 +47,6 @@ class NewsApp(tk.Tk):
         self.configure(bg=BG_DARK)
 
         self._build_ui()
-        self._load_sample()
 
     # ── UI construction ────────────────────────────────────────────────────────
 
@@ -98,6 +97,20 @@ class NewsApp(tk.Tk):
     def _build_input_panel(self, parent):
         self._section_label(parent, "📄  Input News Article")
 
+        # Title/headline row — feeds the title-keyword boost
+        title_row = tk.Frame(parent, bg=BG_DARK)
+        title_row.pack(fill='x', pady=(0, 5))
+        tk.Label(title_row, text="Headline (optional):", bg=BG_DARK,
+                 fg=TEXT_DIM, font=FONT_SMALL).pack(side='left', padx=(0, 6))
+        self.title_var = tk.StringVar()
+        tk.Entry(
+            title_row, textvariable=self.title_var,
+            bg=BG_INPUT, fg=TEXT_MAIN, insertbackground=ACCENT,
+            relief='flat', font=FONT_BODY,
+            highlightthickness=1, highlightcolor=ACCENT,
+            highlightbackground=BORDER
+        ).pack(side='left', fill='x', expand=True)
+
         # Options row
         opts = tk.Frame(parent, bg=BG_DARK)
         opts.pack(fill='x', pady=(0, 6))
@@ -128,7 +141,6 @@ class NewsApp(tk.Tk):
         btn_row.pack(fill='x', pady=(8, 0))
 
         self._btn(btn_row, "🗒  Load File",   self._load_file,    CARD_BG).pack(side='left', padx=(0, 6))
-        self._btn(btn_row, "📋  Sample",      self._load_sample,  CARD_BG).pack(side='left', padx=(0, 6))
         self._btn(btn_row, "🗑  Clear",        self._clear_input,  CARD_BG).pack(side='left')
 
         self._btn(
@@ -189,10 +201,6 @@ class NewsApp(tk.Tk):
         nb.add(t4, text='  Statistics  ')
         self._build_stats_tab(t4)
 
-        # Save button
-        self._btn(parent, "💾  Save Report", self._save_report, ACCENT2).pack(
-            anchor='e', pady=(8, 0)
-        )
 
     def _build_summary_tab(self, parent):
         # Category badge
@@ -276,30 +284,6 @@ class NewsApp(tk.Tk):
             self._update_word_count()
             self.status_var.set(f"Loaded: {path}")
 
-    def _load_sample(self, _=None):
-        sample = (
-            "Scientists at NASA have announced a groundbreaking discovery that could change our "
-            "understanding of Mars. The Mars Perseverance rover, which landed on the red planet "
-            "in February 2021, has found chemical signatures that suggest ancient microbial life "
-            "may have once existed beneath the Martian surface.\n\n"
-            "The rover collected rock samples from the Jezero Crater, an ancient lake bed believed "
-            "to have contained liquid water billions of years ago. Analysis of these samples "
-            "revealed organic molecules and mineral deposits consistent with biological activity, "
-            "according to the research team.\n\n"
-            "'This is the most significant finding in the history of Mars exploration,' said lead "
-            "scientist Dr. Sarah Chen. 'While we cannot confirm life definitively, the evidence "
-            "strongly suggests Mars had the right conditions to support it.'\n\n"
-            "NASA plans to return the collected samples to Earth by 2033 through a joint mission "
-            "with the European Space Agency. Once on Earth, the samples will be analyzed using "
-            "advanced laboratory equipment far more sophisticated than anything currently on Mars. "
-            "The finding also has major implications for the search for life elsewhere in the "
-            "universe. If life once existed on Mars, scientists believe the chances of finding "
-            "life on other planets are significantly higher."
-        )
-        self.input_text.delete('1.0', 'end')
-        self.input_text.insert('1.0', sample)
-        self._update_word_count()
-
     def _clear_input(self):
         self.input_text.delete('1.0', 'end')
         self.wc_var.set("0 words")
@@ -317,11 +301,14 @@ class NewsApp(tk.Tk):
                 "Please provide an article with at least 30 words."
             )
             return
+        title = self.title_var.get().strip()
         self.status_var.set("⏳ Processing …")
-        threading.Thread(target=self._do_summarize, args=(article,), daemon=True).start()
+        threading.Thread(target=self._do_summarize, args=(article, title), daemon=True).start()
 
-    def _do_summarize(self, article: str):
-        result = self.summarizer.generate_summary(article, num_sentences=self.n_var.get())
+    def _do_summarize(self, article: str, title: str = ''):
+        result = self.summarizer.generate_summary(
+            article, num_sentences=self.n_var.get(), title=title
+        )
         self.after(0, self._show_results, result)
 
     def _show_results(self, result: dict):
@@ -333,7 +320,8 @@ class NewsApp(tk.Tk):
         self.result = result
 
         # ── Summary tab ──────────────────────────────────────────────────────
-        self.cat_var.set(f"  {result['category']}  ")
+        conf = result.get('category_confidence', '')
+        self.cat_var.set(f"  {result['category']}  (confidence: {conf})  ")
         self.summary_text.config(state='normal')
         self.summary_text.delete('1.0', 'end')
         self.summary_text.insert('1.0', result['summary'])
@@ -408,20 +396,7 @@ class NewsApp(tk.Tk):
             f"({s['compression_ratio']}% of original)"
         )
 
-    def _save_report(self):
-        if not self.result:
-            messagebox.showinfo("Nothing to save", "Please summarize an article first.")
-            return
-        path = filedialog.asksaveasfilename(
-            defaultextension='.txt',
-            filetypes=[("Text file", "*.txt")],
-            initialfile='summary_report.txt',
-            title="Save Report"
-        )
-        if path:
-            self.summarizer.save_summary(self.result, path)
-            messagebox.showinfo("Saved", f"Report saved to:\n{path}")
-            self.status_var.set(f"Saved → {path}")
+   
 
 
 # ─── ENTRY POINT ─────────────────────────────────────────────────────────────

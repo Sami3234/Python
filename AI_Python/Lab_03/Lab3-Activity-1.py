@@ -1,3 +1,7 @@
+# Lab 03 Activity: Simple graph par Breadth First Search chalata hai.
+# Queue use hoti hai taa ke nodes level by level visit hon.
+# Output BFS traversal order print karta hai.
+
 graph = {
     '5': ['3','7'],
     '3': ['2','4'],

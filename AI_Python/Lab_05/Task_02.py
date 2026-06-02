@@ -1,3 +1,7 @@
+# Lab 05 Task: BFS, DFS aur UCS ki memory usage compare karta hai.
+# tracemalloc peak memory KB mein measure karta hai.
+# Same Romania graph par Arad se Bucharest search run hoti hai.
+
 from collections import deque
 import heapq
 import tracemalloc

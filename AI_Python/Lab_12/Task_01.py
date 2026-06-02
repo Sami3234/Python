@@ -1,3 +1,7 @@
+# Lab 12 Task: Linear vs Polynomial Regression compare karta hai.
+# Position salary data par dono models train hote hain.
+# Level 6.5 salary prediction aur plots display hote hain.
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

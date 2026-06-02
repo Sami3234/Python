@@ -1,3 +1,7 @@
+# Lab 09 Task: Node class ke through search tree/problem solve karta hai.
+# Parent references path reconstruction mein help karti hain.
+# Algorithm final path/answer output karta hai.
+
 class Node:
     def __init__(self, position, parent):
         self.position = position

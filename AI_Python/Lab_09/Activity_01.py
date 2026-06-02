@@ -1,3 +1,7 @@
+# Lab 09 Activity: Simple genetic algorithm style process chalata hai.
+# random module population/selection/mutation ke liye use hota hai.
+# Iterations ke through better solution search hoti hai.
+
 import random
 import numpy
 import copy

@@ -1,3 +1,7 @@
+# Lab 05 Activity: Uniform Cost Search ka basic implementation hai.
+# Queue ko cost ke basis par sort karke lowest-cost route explore karta hai.
+# Start node 0 se goal node 6 tak minimum cost print hoti hai.
+
 def uniform_cost_search(goal, start):
 
     global graph, cost

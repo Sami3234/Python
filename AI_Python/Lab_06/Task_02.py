@@ -1,3 +1,7 @@
+# Lab 06 Task: 2D grid mein police-thief matching karta hai.
+# Grid ke har row/column positions scan karke catches count hota hai.
+# Range k ke andar possible matches greedy style mein count hote hain.
+
 def policeThief2D(grid, k):
     police = []
     thieves = []

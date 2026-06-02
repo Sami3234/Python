@@ -1,3 +1,7 @@
+# Lab 06 Activity: Fractional Knapsack greedy approach se solve hota hai.
+# Items ko value/weight ratio ke basis par choose kiya jata hai.
+# Capacity fill karte hue maximum possible value calculate hoti hai.
+
 class ItemValue:
     def __init__(self, wt, val):
         self.wt = wt

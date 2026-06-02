@@ -1,3 +1,7 @@
+# Lab 13 Activity: Pygame window mein four squares draw karta hai.
+# Square sprite class surface aur rect create karti hai.
+# Backspace ya window close par program quit hota hai.
+
 import pygame
 from pygame.locals import *
 

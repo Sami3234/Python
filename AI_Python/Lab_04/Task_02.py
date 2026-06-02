@@ -1,3 +1,7 @@
+# Lab 04 Task: BFS aur DFS ko Romania graph par compare karta hai.
+# Cases dikhate hain kab BFS fewer nodes visit karta hai aur kab DFS.
+# Output visited order aur total visited nodes print karta hai.
+
 # ---------------------------------------------------
 # BFS and DFS Comparison on Romania Map Graph
 # ---------------------------------------------------

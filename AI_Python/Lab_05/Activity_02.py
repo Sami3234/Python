@@ -1,3 +1,7 @@
+# Lab 05 Activity: Linear search example hai.
+# Array ko left se right scan karke target element ka index dhoondta hai.
+# Element milay to index, warna not-present message print karta hai.
+
 def search(arr, x):
     for i in range(len(arr)):
         if arr[i] == x:

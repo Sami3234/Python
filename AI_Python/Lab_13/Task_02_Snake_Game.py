@@ -1,3 +1,7 @@
+# Lab 13 Task: Snake Game ka enhanced version hai.
+# Obstacles, extra food aur speed changes score ke basis par add hain.
+# Collision checks game over conditions manage karte hain.
+
 import pygame
 import random
 

@@ -1,3 +1,7 @@
+# Lab 06 Activity: Recursive binary search example hai.
+# Sorted array mein middle element compare karke search space half hoti hai.
+# Target found ho to index return hota hai, warna -1.
+
 def binarySearch(arr, l, r, x):
 
     if r >= l:
